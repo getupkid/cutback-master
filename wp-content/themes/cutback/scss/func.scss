@@ -1,0 +1,74 @@
+@import "bebas-neue/stylesheet.css";
+@import "css/ctbk.css";
+
+$titleFont: 'bebas', arial, helvetica, verdana, geneva, sans-serif;
+$typeFont: verdana, geneva, arial, helvetica, sans-serif;
+
+$titleBg: #000;
+$titleColor: #fff;
+$titleSize: 24px;
+
+$white: #fff;
+
+$contentBg: #ebebeb;
+$contentColor: #000;
+
+$wrapWidth: 950px;
+
+$footerHeight: 115px;
+$ftrBrdrTop: 24;
+$ftrBrdrBtm: 18;
+
+$defLtrSpacing: 0.05em;
+
+@mixin heading($bg: false) {
+  color: $titleColor;
+  font-weight: normal;
+  font-family: $titleFont;
+  
+  @if $bg == true {
+    background: $titleBg;
+  }
+}
+
+@mixin stickyFooter() {
+  #wrapper {
+    min-height: 100%;
+  }
+  
+  #main {
+    //overflow: auto;
+  }
+  
+  #footer {
+      height: $footerHeight;
+      position: absolute;
+      bottom:  unquote('-' + ($footerHeight + $ftrBrdrBtm));
+      width: 100%;
+      border-top: $ftrBrdrTop + px solid #000;
+      border-bottom: $ftrBrdrBtm + px solid #000;
+      background-color: rgba(0,0,0,0.85);
+      transition-duration: 0.3s;
+      .copyright {
+        font-size: 9px;
+        text-align: center;
+        margin-top: 24px; 
+        color: darken($white,5%);
+      }
+      &:hover {
+        bottom: 0;
+      }
+    }
+}
+
+@mixin links() {
+  a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #fff;
+    font-family: $typeFont;
+  }
+  
+  p {
+    font-family: $typeFont;
+  }
+}

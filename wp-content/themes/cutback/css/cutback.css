@@ -1,0 +1,117 @@
+@import url(bebas-neue/stylesheet.css);
+@import url(css/ctbk.css);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+
+:focus { /* remember to define focus styles! */ outline: 0; }
+
+body { background: #fff; }
+
+ol, ul { list-style: none; }
+
+table { /* tables still need 'cellspacing="0"' in the markup */ border-collapse: separate; border-spacing: 0; }
+
+caption, th, td { font-weight: normal; text-align: left; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+
+blockquote, q { quotes: "" ""; }
+
+a img { border: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+#wpadminbar { display: none; }
+
+* { margin: 0; padding: 0; }
+
+html, body { width: 100%; height: 100%; }
+
+body { background-position: center top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; position: relative; overflow-y: hidden; }
+
+/* KEEP YOUR FOOTER DOWN! */
+#wrapper { min-height: 100%; }
+
+#footer { height: 115px; position: absolute; bottom: -133px; width: 100%; border-top: 24px solid black; border-bottom: 18px solid black; background-color: rgba(0, 0, 0, 0.85); transition-duration: 0.3s; }
+#footer .copyright { font-size: 9px; text-align: center; margin-top: 24px; color: #f2f2f2; }
+#footer:hover { bottom: 0; }
+
+a:link, a:visited, a:active { text-decoration: none; color: #fff; font-family: verdana, geneva, arial, helvetica, sans-serif; }
+
+p { font-family: verdana, geneva, arial, helvetica, sans-serif; }
+
+.offscreen { position: absolute; left: -9999em; }
+
+h1, h2, h3, h4 { color: white; font-weight: normal; font-family: "bebas", arial, helvetica, verdana, geneva, sans-serif; line-height: auto; }
+
+.clear { clear: both; }
+
+.wrapper { width: 950px; margin: auto; position: relative; }
+
+#wrapper #header { padding-top: 15px; margin-bottom: 20px; }
+#wrapper #header #logo { background: url("../img/cutback-logo.png") no-repeat; width: 371px; height: 100px; display: inline-block; margin-left: -14px; }
+#wrapper #header #logo a { display: block; height: 100px; width: 371px; }
+#wrapper #header #logo:hover { background-position: left -100px; }
+#wrapper #header #logo:active { background-position: left -200px; }
+#wrapper #header #tagline { display: inline-block; vertical-align: bottom; margin-left: 10px; }
+#wrapper #header #tagline p { color: white; font-weight: normal; font-family: "bebas", arial, helvetica, verdana, geneva, sans-serif; font-size: 2.1em; letter-spacing: 0.05em; }
+#wrapper nav { float: right; min-height: 370px; position: relative; }
+#wrapper nav li { width: 182px; position: relative; }
+#wrapper nav li a { color: white; text-decoration: none; font-family: "bebas", arial, helvetica, verdana, geneva, sans-serif; font-size: 2em; display: block; padding-top: 2px; padding-left: 8px; transition-duration: 0.2s; letter-spacing: 0.05em; }
+#wrapper nav li a:hover { background: #000; }
+#wrapper nav li .sub-menu { position: absolute; left: -9999em; }
+#wrapper nav li:last-child { margin-bottom: 50px; }
+#wrapper nav .current-menu-item.menu-item-has-children .sub-menu, #wrapper nav .current_page_ancestor .sub-menu { left: auto; position: relative; }
+#wrapper nav .current-menu-item.menu-item-has-children .sub-menu:last-child, #wrapper nav .current_page_ancestor .sub-menu:last-child { margin-bottom: 0; }
+#wrapper nav .current_page_item a { background: black; }
+#wrapper nav .current-page-parent a { background: rgba(0, 0, 0, 0.8); }
+#wrapper nav .menu-item-has-children .sub-menu li.current_page_item a { background: #000; }
+#wrapper nav .menu-item-has-children .sub-menu li:last-child { margin-bottom: 0; }
+#wrapper nav .menu-item-has-children .sub-menu li a { background: none; }
+#wrapper nav .menu-item-has-children .sub-menu li a:hover { background: #000; }
+#wrapper .sn-links { position: absolute; bottom: -5px; left: 0.5em; }
+#wrapper .sn-links a { transition-duration: 0.2s; margin-right: 10px; text-decoration: none; color: #fff; font-size: 2.5em; width: auto; }
+#wrapper .sn-links a:hover { color: rgba(0, 0, 0, 0.7); }
+#wrapper .share-links { padding-top: 8px; }
+#wrapper .share-links a { font-family: "bebas", arial, helvetica, verdana, geneva, sans-serif; font-size: 1.4em; display: inline-block; vertical-align: middle; }
+#wrapper .share-links a .icon-share { font-size: 1.7em; display: inline-block; vertical-align: middle; padding-left: 5px; }
+#wrapper #frontpage-video { width: 745px; height: 370px; float: left; background: black; }
+#wrapper #feature { width: 79%; }
+#wrapper .feature-article { float: left; width: 37.5%; min-height: 200px; padding-top: 5px; /* =================================== STORIES =================================== */ }
+#wrapper .feature-article h1 { background: #000; font-size: 2em; padding: 4px 0 2px 10px; line-height: 1em; letter-spacing: 0.05em; }
+#wrapper .feature-article .article-content { background: rgba(255, 255, 255, 0.9); width: 94%; padding: 3%; margin-top: 15px; }
+#wrapper .feature-article section { min-height: 50px; }
+#wrapper .feature-article section p { padding: 0 0.5% 5% 0.5%; font-size: 0.70em; line-height: 1.6em; }
+#wrapper .feature-article section p:first-child { font-weight: bold; }
+#wrapper .feature-article .watch-now { float: right; }
+#wrapper .feature-article .watch-now a { display: block; background: url("../img/watch-now.png"); width: 85px; height: 68px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+#wrapper .feature-article .watch-now a:hover { background-position: left -68px; }
+#wrapper .feature-article footer .share-links { padding: 0; float: left; padding-top: 17px; }
+#wrapper .feature-article footer a { color: #000; font-size: 1.2em; }
+#wrapper .feature-article .post-child { width: 362px; display: inline-block; margin-bottom: 17px; }
+#wrapper .feature-article .post-child:nth-child(2n+2) { margin-left: 18px; }
+#wrapper .feature-article .post-child a { overflow: hidden; display: block; }
+#wrapper .feature-article .post-child a.post-child-thumb { background: #fff; border-radius: 1px; overflow: hidden; }
+#wrapper .feature-article .post-child a img { display: block; opacity: 0.7; transition-duration: 0.2s; }
+#wrapper .feature-article .post-child a:hover img { opacity: 1; }
+#wrapper .feature-article .post-child h2 { margin-top: 16px; }
+#wrapper .feature-article .post-child h2 a { color: white; font-weight: normal; font-family: "bebas", arial, helvetica, verdana, geneva, sans-serif; background: black; border-radius: 1.5px; overflow: hidden; padding: 5px 0 3px 10px; font-size: 1.8em; line-height: 1em; letter-spacing: 0.05em; }
+
+.single-post #wrapper #share { background: rgba(255, 255, 255, 0.85); padding: 8% 3% 3%; position: relative; }
+.single-post #wrapper .fb-share-button { margin-left: 15px; position: absolute; top: 36px; }
+.single-post #wrapper .share-links { color: #000; font-family: "bebas", arial, helvetica, verdana, geneva, sans-serif; font-size: 1.4em; }
+.single-post #wrapper .share-links span { display: inline-block; vertical-align: middle; }
+.single-post #wrapper .share-links .icon-share { margin-left: 2%; font-size: 1.4em; }
+.single-post #wrapper .small-video section { margin-top: 15px; }
+.single-post #wrapper .small-video section .content-wrap p { padding: 3%; padding-bottom: 0; background: rgba(255, 255, 255, 0.85); }
+.single-post #wrapper .small-video section .content-wrap p:last-child { padding-bottom: 3%; }
+.single-post #wrapper .small-video section h2 { margin-top: 16px; margin-bottom: 16px; color: white; font-weight: normal; font-family: "bebas", arial, helvetica, verdana, geneva, sans-serif; background: black; border-radius: 1.5px; overflow: hidden; padding: 5px 0 3px 10px; font-size: 1.8em; line-height: 1em; letter-spacing: 0.05em; }
+.single-post #wrapper .menu-item-has-children .sub-menu { left: auto; position: relative; }
+.single-post #wrapper .menu-item-has-children .sub-menu:last-child { margin-bottom: 0; }
+
+#footer-logos { float: right; margin-top: 18px; }
+#footer-logos p { display: inline-block; vertical-align: bottom; margin-right: 30px; }
+
+#footer aside { float: left; padding-top: 20px; }
+#footer aside div { display: inline-block; vertical-align: top; padding-right: 30px; }
+#footer aside div h4 { font-size: 16px; letter-spacing: 0.05em; }
+#footer aside div p { color: white; font-size: 11px; }
