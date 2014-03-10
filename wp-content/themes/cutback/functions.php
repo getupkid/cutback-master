@@ -160,3 +160,23 @@ function share_icons($post) {
 
 add_shortcode('share-icons', 'share_icons');
 
+
+function open_graph() {
+    global $post;
+    
+    $thumb_id = get_post_thumbnail_id($post->ID);
+    $thumb_src = wp_get_attachment_image_src($thumb_id);
+    
+    if($thumb_src == '') {
+        $thumb_src = get_bloginfo('template_url').'/img/cutback-fb-no-image.png';
+    }
+    
+    echo '<meta property="og:image" content="'.$thumb_src.'">'."\n";
+    echo '<meta property="og:url" content="'.get_permalink($post->ID).'">'."\n";
+    echo '<meta property="og:title" content="Cutback - '.$post->post_title.'">'."\n";
+    echo '<meta property="og:description" content="'.$post->post_excerpt.'">'."\n";
+    echo '<meta property="og:type" content="website">'."\n";
+}
+
+add_action('wp_head','open_graph');
+
